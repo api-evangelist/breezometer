@@ -1,0 +1,54 @@
+{
+    "name": "BreezoMeter",
+    "description": "World leading air pollution API. Top features: AQI map, forecast, pollen & air quality data. Clients trusting us: Dyson, Veolia and AccuWeather. Learn more!",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/18769-breezometer.jpg",
+    "tags": [
+        "air",
+        "api provider",
+        "apis.io import",
+        "have api"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/breezometer\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "BreezoMeter",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/18769-breezometer.jpg",
+            "humanURL": "https:\/\/breezometer.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/breezometer-openapi.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "API.json - Authoritative",
+            "url": "http:\/\/breezometer.com\/static\/apis.json"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/breezometer"
+        },
+        {
+            "type": "Email",
+            "url": "support@breezometer.com"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/BreezoMeter"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/breezometer.com"
+        }
+    ]
+}
