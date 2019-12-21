@@ -8,8 +8,8 @@
         "apis.io import",
         "have api"
     ],
-    "created": "2019-12-19",
-    "modified": "2019-12-19",
+    "created": "2019-12-20",
+    "modified": "2019-12-20",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/breezometer\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
@@ -22,8 +22,8 @@
             "tags": [],
             "properties": [
                 {
-                    "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/breezometer-openapi.json"
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/breezometer\/master\/breezometer-postman-collection.json"
                 }
             ]
         }
@@ -33,6 +33,10 @@
         {
             "type": "API.json - Authoritative",
             "url": "http:\/\/breezometer.com\/static\/apis.json"
+        },
+        {
+            "type": "APIs.json",
+            "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apis.json"
         },
         {
             "type": "Crunchbase",
