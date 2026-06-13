@@ -1,0 +1,76 @@
+name: BreezoMeter FinOps
+description: Financial operations guidance for managing BreezoMeter API costs. BreezoMeter
+  uses a daily object quota model where costs are determined by the volume of data
+  objects consumed rather than individual API requests. Following Google's acquisition
+  in 2022, new integrations use Google Maps Platform pricing for equivalent environmental
+  APIs.
+url: https://breezometer.com/air-quality-features/pricing/
+costModel:
+  type: Object-Based Quota
+  description: Costs are measured by the number of data objects returned by API calls,
+    not the number of HTTP requests made. A single API request for a 5-day forecast
+    returns 5 objects; a request for current conditions for 10 pollutants may count
+    as 10 objects.
+  billingCycle: daily
+  overageModel: Pay-per-object above daily quota threshold for paid accounts. Free
+    accounts are blocked until daily quota resets at midnight UTC.
+costDrivers:
+  - name: Daily Object Volume
+    description: The primary cost driver is the total number of data objects consumed
+      per day. Forecast APIs with multiple days or pollutants multiply per-request
+      object counts.
+    impact: high
+  - name: API Feature Selection
+    description: The 'features' parameter on API calls controls which data features
+      are returned. Requesting fewer features reduces object count and cost.
+    impact: medium
+  - name: Forecast Horizon
+    description: Weather and pollen APIs support 1-5 day forecasts. Requesting 5-day
+      forecasts consumes 5x the objects of a 1-day forecast for the same location.
+    impact: medium
+  - name: Geographic Coverage
+    description: Queries for many distinct lat/lon coordinates multiply object consumption.
+      Batching or caching location results reduces redundant API calls.
+    impact: high
+optimizationStrategies:
+  - name: Cache API Responses
+    description: Air quality and weather data does not change minute-to-minute. Caching
+      responses for 15-60 minutes significantly reduces daily object consumption for
+      high-frequency applications.
+    estimatedSavings: 50-80%
+  - name: Request Only Needed Features
+    description: Use the 'features' query parameter to request only the specific pollutants
+      or data types needed. Avoid requesting all features if only AQI score is needed.
+    estimatedSavings: 30-60%
+  - name: Optimize Forecast Length
+    description: Only request the number of forecast days actually needed by the application.
+      If showing only a 3-day pollen forecast, request 3 days instead of 5.
+    estimatedSavings: 20-40%
+  - name: Consolidate Location Queries
+    description: Batch multiple location queries where possible. Avoid making redundant
+      queries for the same or nearby coordinates within the same caching window.
+    estimatedSavings: 20-50%
+  - name: Monitor Daily Quota Usage
+    description: Track daily object consumption through the developers dashboard to
+      avoid unexpected overage charges on paid accounts or service disruption on free
+      accounts.
+    estimatedSavings: Prevents overage charges
+monitoring:
+  - name: Developer Dashboard
+    description: BreezoMeter provides a developer dashboard at developers.breezometer.com
+      for tracking API key usage, quota consumption, and billing metrics.
+    url: https://developers.breezometer.com/dashboard
+  - name: API Key Metadata
+    description: API key configuration includes usage tracking. Monitor quota utilization
+      via the dashboard to identify usage patterns and plan tier appropriateness.
+googleMigration:
+  description: Following Google's $225M acquisition of BreezoMeter in September 2022,
+    its environmental intelligence technology is now part of Google Maps Platform.
+    Organizations relying on BreezoMeter APIs should evaluate migration to Google
+    Maps Platform Air Quality API, Pollen API, and Weather API equivalents.
+  googlePricingUrl: https://mapsplatform.google.com/pricing/
+  googleAirQualityTier: Essentials
+  googlePollenTier: Pro
+  notes: Google Maps Platform uses a pay-as-you-go model per API call rather than
+    BreezoMeter's object-based daily quota model. Cost modeling must be recalculated
+    when migrating.

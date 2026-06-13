@@ -1,0 +1,70 @@
+name: BreezoMeter Plans and Pricing
+description: BreezoMeter offered tiered API access plans ranging from a free evaluation
+  tier to enterprise custom plans. Following Google's acquisition in September 2022,
+  BreezoMeter's environmental data APIs are now available through Google Maps Platform
+  with pay-as-you-go and subscription pricing.
+url: https://breezometer.com/air-quality-features/pricing/
+plans:
+  - name: Evaluation (Free)
+    description: Free tier for developers to evaluate BreezoMeter APIs with limited
+      daily quota. Requests are blocked until midnight when the daily quota is exceeded.
+    price: 0
+    currency: USD
+    billingPeriod: monthly
+    features:
+      - Limited daily API call quota
+      - Access to Air Quality API
+      - Access to Pollen API
+      - Access to Weather API
+      - JSON responses
+      - API key authentication
+      - Street-level accuracy data
+    rateLimits:
+      - name: Daily Quota
+        description: Fixed daily quota; additional requests blocked until midnight
+          when exceeded
+        limit: Limited
+        period: daily
+  - name: Paid
+    description: Commercial plan with expanded daily quota and pay-per-object-exceeded
+      billing. Specific quota and pricing negotiated with BreezoMeter sales team.
+    price: custom
+    currency: USD
+    billingPeriod: monthly
+    features:
+      - Higher daily API call quota
+      - Access to all APIs (Air Quality, Pollen, Wildfire Tracker+, Weather, Environmental
+        Alerts)
+      - Pay-per-object for quota overages
+      - Priority support
+      - Custom data features
+      - Global coverage
+      - Historical data access
+      - Street-level accuracy
+    rateLimits:
+      - name: Daily Quota
+        description: Negotiated daily quota; additional fees apply for overages above
+          daily quota
+        limit: Custom
+        period: daily
+  - name: Enterprise
+    description: Enterprise custom plan with tailored quota, dedicated support, and
+      SLA guarantees. Contact BreezoMeter/Google sales for pricing.
+    price: custom
+    currency: USD
+    billingPeriod: monthly
+    features:
+      - Custom high-volume daily quota
+      - Access to all APIs including Environmental Alerts and Wildfire Tracker+
+      - Dedicated account management
+      - SLA guarantees
+      - Custom data integrations
+      - White-label options
+      - Advanced analytics dashboard
+      - Webhook support
+      - Historical data archives
+notes: BreezoMeter was acquired by Google in September 2022 for approximately $225
+  million. Its environmental APIs are now integrated into Google Maps Platform. Original
+  BreezoMeter pricing pages redirect to mapsplatform.google.com. Google Maps Platform
+  offers pay-as-you-go pricing for Air Quality API (Essentials tier) and Pollen API
+  (Pro tier).

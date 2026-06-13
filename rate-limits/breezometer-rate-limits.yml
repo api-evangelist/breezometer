@@ -1,0 +1,49 @@
+name: BreezoMeter Rate Limits
+description: BreezoMeter APIs are governed by daily quota limits per account, stored
+  in the API key configuration. The quota model restricts the number of data objects
+  returned per day rather than requests per second, making it a usage-based quota
+  system tied to the account plan.
+url: https://docs.breezometer.com/api-documentation/introduction/
+rateLimits:
+  - name: Daily Object Quota
+    description: Every BreezoMeter account is restricted to a specific number of
+      data objects it can receive on a daily basis. The quota resets at midnight UTC.
+    scope: account
+    period: daily
+    enforcement:
+      freeAccount: Requests are blocked for the remainder of the day when the daily
+        quota is exceeded. Quota resets at midnight of the following day.
+      paidAccount: Additional charges apply for objects received above the daily quota
+        threshold. No hard blocking occurs on paid accounts.
+    notes: The API key stores permissions, rate limits, daily quota, API usage, and
+      billing information associated with the account. Quotas are tied to the API
+      key rather than individual endpoints.
+  - name: API Key Permissions
+    description: Each API key has specific permissions controlling which APIs and
+      features the account can access. Requests to unauthorized APIs or features return
+      permission errors.
+    scope: api-key
+    period: N/A
+    notes: API keys can be configured to grant access to specific APIs (Air Quality,
+      Pollen, Wildfire Tracker+, Weather, Environmental Alerts) and specific feature
+      sets within those APIs.
+authentication:
+  type: API Key
+  parameterName: key
+  parameterLocation: query
+  description: All API requests require an API key passed as the 'key' query parameter.
+    API keys are obtained by signing up at developers.breezometer.com. The key encodes
+    the account's quota, permissions, and billing configuration.
+  example: 'https://api.breezometer.com/air-quality/v2/current-conditions?lat=32.074&lon=34.793&key=YOUR_API_KEY'
+errorCodes:
+  - code: 401
+    description: Unauthorized - Invalid or missing API key
+  - code: 404
+    description: Not Found - Incorrect endpoint URL
+  - code: 429
+    description: Too Many Requests - Daily quota exceeded (free accounts)
+notes: BreezoMeter was acquired by Google in September 2022. Rate limit specifics
+  for new accounts are managed through Google Maps Platform. The original BreezoMeter
+  rate limit model used daily object quotas rather than per-second request limits,
+  which is atypical and reflects the environmental data provider model where each
+  query may return multiple data objects (pollutants, forecast days, pollen types).
