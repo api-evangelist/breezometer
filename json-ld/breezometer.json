@@ -1,0 +1,67 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "BreezoMeter",
+  "description": "Environmental intelligence REST API providing real-time and forecast air quality, pollen counts, wildfire data, and weather information with street-level accuracy. BreezoMeter was acquired by Google in September 2022 and its technology is now integrated into Google Maps Platform.",
+  "url": "https://mapsplatform.google.com/maps-products/#environment-section",
+  "sameAs": [
+    "https://www.linkedin.com/company/breezometer",
+    "https://x.com/breezometer",
+    "https://github.com/topics/breezometer"
+  ],
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Google",
+    "url": "https://google.com"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "BreezoMeter APIs",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "BreezoMeter Air Quality API",
+        "description": "Real-time and forecast air quality data with street-level accuracy, including pollutant levels (CO, NO2, O3, PM10, PM2.5, SO2), AQI scores, and health recommendations for any location worldwide.",
+        "url": "https://docs.breezometer.com/api-documentation/air-quality-api/v1/"
+      },
+      {
+        "@type": "Offer",
+        "name": "BreezoMeter Pollen API",
+        "description": "Daily forecast pollen data for a specific location, providing pollen index for various plant types for up to 5 days, helping allergy sufferers plan their outdoor activities.",
+        "url": "https://docs.breezometer.com/api-documentation/pollen-api/v2/"
+      },
+      {
+        "@type": "Offer",
+        "name": "BreezoMeter Wildfire Tracker+ API",
+        "description": "Real-time wildfire monitoring API providing area monitoring and precision tracking of active fires worldwide, including fire perimeters, intensity, and spread patterns for predefined areas of interest.",
+        "url": "https://docs.breezometer.com/wildfire-tracker-api/v1/"
+      },
+      {
+        "@type": "Offer",
+        "name": "BreezoMeter Weather API",
+        "description": "Advanced weather forecast API providing current conditions, hourly forecasts for up to 5 days, and daily forecasts for up to 5 days, powered by high-resolution environmental data models.",
+        "url": "https://docs.breezometer.com/weather-api/v1/"
+      },
+      {
+        "@type": "Offer",
+        "name": "BreezoMeter Environmental Alerts API",
+        "description": "Personalized environmental alerting platform that sends proactive notifications about air quality, pollen, wildfire, and weather events via a single POST endpoint driving the Insights Engine with custom alert configurations.",
+        "url": "https://docs.breezometer.com/environmental-alerts-api/v1/"
+      }
+    ]
+  },
+  "keywords": [
+    "Air Quality",
+    "Environment",
+    "Pollen",
+    "Wildfire",
+    "Weather",
+    "Environmental Intelligence",
+    "REST API"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "developer support",
+    "email": "developers@breezometer.com"
+  }
+}
