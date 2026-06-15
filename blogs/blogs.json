@@ -2,5 +2,17 @@
   "blogUrl": "https://blog.breezometer.com/",
   "note": "BreezoMeter was acquired by Google in September 2022. All blog and documentation URLs now redirect to https://mapsplatform.google.com/maps-products/#environment-section. Historical blog content is no longer publicly accessible at the original domain.",
   "lastChecked": "2026-06-13",
-  "posts": []
+  "posts": [],
+  "repo": "breezometer",
+  "feeds": [
+    {
+      "source": "https://www.linkedin.com/company/breezometer",
+      "feed_url": "https://www.linkedin.com/company/breezometer",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-06-14T20:42:17Z"
 }
