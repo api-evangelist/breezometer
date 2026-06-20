@@ -3,7 +3,7 @@ description: Environmental intelligence REST API providing real-time and forecas
   air quality, pollen counts, wildfire data, and weather information with street-level
   accuracy. BreezoMeter was acquired by Google in September 2022 and its technology
   is now integrated into Google Maps Platform.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/breezometer/refs/heads/main/apis.yml
 created: '2026-06-13'
 modified: '2026-06-13'
@@ -20,7 +20,7 @@ apis:
     description: Real-time and forecast air quality data with street-level accuracy,
       including pollutant levels (CO, NO2, O3, PM10, PM2.5, SO2), AQI scores, and
       health recommendations for any location worldwide.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://docs.breezometer.com/api-documentation/air-quality-api/v1/
     baseURL: https://api.breezometer.com/v2/
     tags:
@@ -37,7 +37,7 @@ apis:
     description: Daily forecast pollen data for a specific location, providing pollen
       index for various plant types for up to 5 days, helping allergy sufferers plan
       their outdoor activities.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://docs.breezometer.com/api-documentation/pollen-api/v2/
     baseURL: https://api.breezometer.com/v2/
     tags:
@@ -54,7 +54,7 @@ apis:
     description: Real-time wildfire monitoring API providing area monitoring and precision
       tracking of active fires worldwide, including fire perimeters, intensity, and
       spread patterns for predefined areas of interest.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://docs.breezometer.com/wildfire-tracker-api/v1/
     baseURL: https://api.breezometer.com/v2/
     tags:
@@ -72,7 +72,7 @@ apis:
     description: Advanced weather forecast API providing current conditions, hourly
       forecasts for up to 5 days, and daily forecasts for up to 5 days, powered by
       high-resolution environmental data models.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://docs.breezometer.com/weather-api/v1/
     baseURL: https://api.breezometer.com/v2/
     tags:
@@ -89,7 +89,7 @@ apis:
     description: Personalized environmental alerting platform that sends proactive
       notifications about air quality, pollen, wildfire, and weather events via a
       single POST endpoint driving the Insights Engine with custom alert configurations.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://docs.breezometer.com/environmental-alerts-api/v1/
     baseURL: https://api.breezometer.com/v2/
     tags:
