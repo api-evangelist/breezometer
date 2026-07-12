@@ -103,6 +103,10 @@ apis:
       - FN: BreezoMeter Support
         email: developers@breezometer.com
 common:
+  - type: VulnerabilityDisclosure
+    url: security/breezometer-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/breezometer-domain-security.yml
   - type: Website
     url: https://mapsplatform.google.com/maps-products/#environment-section
   - type: Documentation
