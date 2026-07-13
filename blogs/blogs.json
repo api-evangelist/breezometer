@@ -2,12 +2,11 @@
   "repo": "breezometer",
   "feeds": [
     {
-      "source": "https://blog.breezometer.com/",
-      "saved": 0,
-      "error": "301 redirect to mapsplatform.google.com (acquired by Google); no blog"
+      "source": "https://www.linkedin.com/company/breezometer",
+      "error": "HTTPError"
     }
   ],
-  "fetched": "2026-06-27T12:29:18Z",
+  "fetched": "2026-07-11T11:50:51Z",
   "post_count": 0,
-  "agent_pulled": "2026-06-27"
+  "agent_pulled": "2026-07-04"
 }
