@@ -106,6 +106,10 @@ apis:
     baseURL: https://api.breezometer.com/v2/
     tags:
       - Alerts
+      - Notification
+      - Environment
+    tags_raw:
+      - Alerts
       - Notifications
       - Environment
     properties:
