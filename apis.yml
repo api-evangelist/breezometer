@@ -3,6 +3,17 @@ description: Environmental intelligence REST API providing real-time and forecas
   air quality, pollen counts, wildfire data, and weather information with street-level
   accuracy. BreezoMeter was acquired by Google in September 2022 and its technology
   is now integrated into Google Maps Platform.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
