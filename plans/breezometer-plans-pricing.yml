@@ -72,3 +72,29 @@ notes: BreezoMeter was acquired by Google in September 2022 for approximately $2
   BreezoMeter pricing pages redirect to mapsplatform.google.com. Google Maps Platform
   offers pay-as-you-go pricing for Air Quality API (Essentials tier) and Pollen API
   (Pro tier).
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  - negotiated
+  units: []
+  plans:
+  - name: Evaluation (Free)
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods: []
+  - name: Paid
+    access: other
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Enterprise
+    access: other
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
