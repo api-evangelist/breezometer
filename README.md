@@ -64,36 +64,109 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-BreezoMeter was an environmental intelligence company providing real-time and forecast air quality, pollen counts, wildfire data, and weather information via REST APIs with street-level accuracy. Founded in 2014 in Israel by Ran Korber, Emil Knaisher, and Ziv Lautman, BreezoMeter was acquired by Google in September 2022 for approximately $225 million. Its technology is now integrated into Google Maps Platform.
+Environmental intelligence REST API providing real-time and forecast air quality, pollen counts, wildfire data, and weather information with street-level accuracy. BreezoMeter was acquired by Google in September 2022 and its technology is now integrated into Google Maps Platform.
 
-## APIs
+**Areas:** Air Quality · Environment · Pollen · Wildfire · Weather · Environmental Intelligence
 
-- **Air Quality API** - Real-time and forecast air quality data including AQI scores, pollutant concentrations (CO, NO2, O3, PM10, PM2.5, SO2), and health recommendations
-- **Pollen API** - Daily pollen forecasts for up to 5 days covering multiple plant types and pollen indexes
-- **Wildfire Tracker+ API** - Real-time wildfire monitoring with area monitoring and precision tracking capabilities
-- **Weather API** - Current conditions and hourly/daily forecasts for up to 5 days
-- **Environmental Alerts API** - Proactive environmental event notifications via the Insights Engine
+## BreezoMeter on APIs.io
 
-## Authentication
+Everything profiled for BreezoMeter is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/breezometer/](https://apis.io/providers/breezometer/)** — or go straight to one of the APIs or properties below.
 
-All APIs use API key authentication via the `key` query parameter. Keys are obtained through the developer portal at developers.breezometer.com.
+### APIs (5)
 
-**Base URL:** `https://api.breezometer.com/v2/`
+- [BreezoMeter Air Quality API](https://apis.io/apis/breezometer/breezometer-air-quality-api/) — Real-time and forecast air quality data with street-level accuracy, including pollutant levels (CO, NO2, O3, PM10, PM2.5, SO2), AQI scores, and health…
+- [BreezoMeter Pollen API](https://apis.io/apis/breezometer/breezometer-pollen-api/) — Daily forecast pollen data for a specific location, providing pollen index for various plant types for up to 5 days, helping allergy sufferers plan their…
+- [BreezoMeter Wildfire Tracker+ API](https://apis.io/apis/breezometer/breezometer-wildfire-tracker-api/) — Real-time wildfire monitoring API providing area monitoring and precision tracking of active fires worldwide, including fire perimeters, intensity, and…
+- [BreezoMeter Weather API](https://apis.io/apis/breezometer/breezometer-weather-api/) — Advanced weather forecast API providing current conditions, hourly forecasts for up to 5 days, and daily forecasts for up to 5 days, powered by…
+- [BreezoMeter Environmental Alerts API](https://apis.io/apis/breezometer/breezometer-environmental-alerts-api/) — Personalized environmental alerting platform that sends proactive notifications about air quality, pollen, wildfire, and weather events via a single POST…
 
-## Resources
+### Published properties
 
-- [APIs.json Profile](apis.yml)
-- [Plans and Pricing](plans/breezometer-plans-pricing.yml)
-- [Rate Limits](rate-limits/breezometer-rate-limits.yml)
-- [FinOps](finops/breezometer-finops.yml)
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Links
+#### Security (2)
 
-- Website: https://mapsplatform.google.com/maps-products/#environment-section (acquired by Google)
-- Documentation: https://docs.breezometer.com/api-documentation/introduction/
-- LinkedIn: https://www.linkedin.com/company/breezometer
-- X (Twitter): https://x.com/breezometer
+Authentication, trust centre, and vulnerability disclosure.
 
-## Maintainers
+- [Breezometer Domain Security](https://apis.io/security/breezometer/breezometer-domain-security/)
+- [Breezometer Vulnerability Disclosure](https://apis.io/security/breezometer/breezometer-vulnerability-disclosure/)
 
-- [Kin Lane](mailto:kin@apievangelist.com)
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Breezometer Plans Pricing](https://apis.io/plans/breezometer/breezometer-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Breezometer Rate Limits](https://apis.io/rate-limits/breezometer/breezometer-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Breezometer Finops](https://apis.io/finops/breezometer/breezometer-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://mapsplatform.google.com/maps-products/#environment-section)
+- [Documentation](https://docs.breezometer.com/api-documentation/introduction/)
+- [Pricing](https://breezometer.com/air-quality-features/pricing/)
+- [Blog](https://blog.breezometer.com/)
+
+## API Evangelist rating
+
+**Kin Score 8.9** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 71.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 5.3 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 7.9 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/breezometer/](https://apis.io/providers/breezometer/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for BreezoMeter: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/breezometer/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
